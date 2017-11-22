@@ -10,6 +10,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Shared provider
 * Unit tests
 
+## A few words
+
+This app was created in a few hours. If there was a Restful API, a game betweeen players would be possible. If I had more time I would had created some e2e tests and more unit tests.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PlayComponent } from './play.component';
+import { RouterTestingModule } from "@angular/router/testing";
 
 describe('PlayComponent', () => {
   let component: PlayComponent;
@@ -8,6 +9,9 @@ describe('PlayComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports:[
+        RouterTestingModule.withRoutes([{path:'',component:PlayComponent}])
+      ],
       declarations: [ PlayComponent ]
     })
     .compileComponents();
