@@ -11,6 +11,7 @@ Live [Demo](https://nekkon.github.io/RockPaperScissors/)
 * Material2 components
 * FlexLayout
 * Shared provider
+* Use of Environment variables
 * Unit tests
 
 ## A few words

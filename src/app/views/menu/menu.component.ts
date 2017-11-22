@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from "@angular/router";
+import { environment } from "../../../environments/environment";
 
 @Component({
   selector: 'app-menu',
@@ -22,7 +23,7 @@ export class MenuComponent{
   */
   specs(){
       if(window){
-          let url = window.location.origin + "/assets/pdf/specs.pdf";
+          let url = environment.assetsUrl + "/pdf/specs.pdf";
           window.open(url, '_blank');
       }
   }
