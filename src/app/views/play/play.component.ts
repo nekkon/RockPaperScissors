@@ -8,9 +8,9 @@ import { Game } from "../../providers/game";
 })
 export class PlayComponent{
     public images = {
-        rock:'/assets/img/rock.png',
-        paper: '/assets/img/paper.png',
-        scissors:'/assets/img/scissors.png'
+        rock:'assets/img/rock.png',
+        paper: 'assets/img/paper.png',
+        scissors:'assets/img/scissors.png'
     }
 
     constructor(public game:Game) { }
