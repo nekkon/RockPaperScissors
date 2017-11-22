@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  assetsUrl: 'RockPaperScissors/assets'
+  assetsUrl: 'https://nekkon.github.io/RockPaperScissors/assets'
 };
