@@ -2,8 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.3.
 
+Live [Demo](https://nekkon.github.io/RockPaperScissors/)
+
 ## Project includes
 
+* Live demo hosted on Github
 * Lazy loading of views
 * Material2 components
 * FlexLayout
