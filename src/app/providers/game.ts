@@ -14,11 +14,27 @@ export class Game {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
+    /**
+     * Executed when a player selects Rock, Paper, Scissors. 
+     * At the end user is navigated to Result View
+     * player:  selected value (0,1,2)
+     * computer: computer's selected value (0,1,2)
+     * result: 'player','computer','draw'
+     * 0 stands for Rock
+     * 1 stands for Paper
+     * 2 stands for Scissors
+     */
     play(player){
-        let computer = this.getRandomInt(0,2);
+        let computer = this.getRandomInt(0,2); // Returns a random number from 0 to 2, computer choice
         this.result = this.compete(player,computer);
         this.router.navigate(['/result'])
     }
+
+    /**
+     * Executed when a game is player. Returns the winner, else draw.
+     * Throws an error in case there is unexpected input
+     * returns: 'player','computer','draw'
+     */
     compete(player,computer){
         if(player == computer){
             return 'draw';

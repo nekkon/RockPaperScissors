@@ -11,6 +11,9 @@ export class ResultComponent{
 
     constructor(public game:Game, public router:Router) { }
 
+    /**
+     * Navigate to menu
+    */
     menu(){
         this.router.navigate(['/menu']);
     }

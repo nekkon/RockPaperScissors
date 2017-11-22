@@ -1,11 +1,11 @@
 <div class="view" fxLayout="row" fxLayoutWrap fxLayoutAlign="center center">
-    <button (click)="game.play(0)" class="button" matTooltip="rock">
+    <button id="rock" (click)="game.play(0)" class="button" matTooltip="rock">
         <div class="hand" [ngStyle]="{'background-image':'url(' + images.rock + ')'}"></div>
     </button>
-    <button (click)="game.play(1)" class="button" matTooltip="scissors">
-        <div class="hand" [ngStyle]="{'background-image':'url(' + images.scissors + ')'}"></div>
-    </button>
-    <button (click)="game.play(2)" class="button" matTooltip="paper">
+    <button id="paper" (click)="game.play(2)" class="button" matTooltip="paper">
         <div class="hand" [ngStyle]="{'background-image':'url(' + images.paper + ')'}"></div>
+    </button>
+    <button id="scissors" (click)="game.play(1)" class="button" matTooltip="scissors">
+        <div class="hand" [ngStyle]="{'background-image':'url(' + images.scissors + ')'}"></div>
     </button>
 </div>

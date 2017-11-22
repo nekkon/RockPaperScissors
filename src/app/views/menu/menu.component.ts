@@ -12,7 +12,7 @@ export class MenuComponent{
   constructor(public router:Router) { }
 
   /**
-   * Start a new game
+   * Navigate to play view
   */
   play(){
       this.router.navigate(['/play']);

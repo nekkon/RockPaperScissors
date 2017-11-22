@@ -2,6 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuComponent } from './menu.component';
 import { RouterTestingModule } from "@angular/router/testing";
+import { Game } from "../../providers/game";
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -12,7 +13,8 @@ describe('MenuComponent', () => {
       imports:[
         RouterTestingModule.withRoutes([{path:'',component:MenuComponent}])
       ],
-      declarations: [ MenuComponent ]
+      declarations: [ MenuComponent ],
+      providers: [Game]
     })
     .compileComponents();
   }));
@@ -26,4 +28,11 @@ describe('MenuComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should render menu', async(() => {
+    const fixture = TestBed.createComponent(MenuComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('#play')).toBeTruthy();
+    expect(compiled.querySelector('#specs')).toBeTruthy();
+  }));
 });

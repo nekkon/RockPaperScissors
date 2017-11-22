@@ -1,12 +1,12 @@
 <div class="view" fxLayout="column" fxLayoutAlign="center center">
-    <div class="result" *ngIf="game.result == 'player'">
+    <div id="player" class="result" *ngIf="game.result == 'player'">
         YOU WON!!!
     </div>
-    <div class="result" *ngIf="game.result == 'computer'">
+    <div id="computer" class="result" *ngIf="game.result == 'computer'">
         YOU LOST!! TRY AGAIN
     </div>
-    <div class="result" *ngIf="game.result == 'draw'">
+    <div id="draw" class="result" *ngIf="game.result == 'draw'">
         DRAW! TRY AGAIN!!!
     </div>
-    <button mat-raised-button (click)="menu()">MENU</button>
+    <button id="menu" mat-raised-button (click)="menu()">MENU</button>
 </div>
